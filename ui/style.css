@@ -20,3 +20,131 @@ body {
     height: 200px;
 }
 
+01
+@keyframes move-twink-back {
+02
+from {background-position:0 0;}
+03
+to {background-position:-10000px 5000px;}
+04
+}
+05
+@-webkit-keyframes move-twink-back {
+06
+from {background-position:0 0;}
+07
+to {background-position:-10000px 5000px;}
+08
+}
+09
+@-moz-keyframes move-twink-back {
+10
+from {background-position:0 0;}
+11
+to {background-position:-10000px 5000px;}
+12
+}
+13
+@-ms-keyframes move-twink-back {
+14
+from {background-position:0 0;}
+15
+to {background-position:-10000px 5000px;}
+16
+}
+17
+@keyframes move-clouds-back {
+18
+from {background-position:0 0;}
+19
+to {background-position:10000px 0;}
+20
+}
+21
+@-webkit-keyframes move-clouds-back {
+22
+from {background-position:0 0;}
+23
+to {background-position:10000px 0;}
+24
+}
+25
+@-moz-keyframes move-clouds-back {
+26
+from {background-position:0 0;}
+27
+to {background-position:10000px 0;}
+28
+}
+29
+@-ms-keyframes move-clouds-back {
+30
+from {background-position: 0;}
+31
+to {background-position:10000px 0;}
+32
+}
+33
+.stars, .twinkling, .clouds {
+34
+position:absolute;
+35
+top:0;
+36
+left:0;
+37
+right:0;
+38
+bottom:0;
+39
+width:100%;
+40
+height:100%;
+41
+display:block;
+42
+}
+43
+.stars {
+44
+background:#000 url(images/stars.png) repeat top center;
+45
+z-index:0;
+46
+}
+47
+.twinkling{
+48
+background:transparent url(images/twinkling.png) repeat top center;
+49
+z-index:1;
+50
+-moz-animation:move-twink-back 200s linear infinite;
+51
+-ms-animation:move-twink-back 200s linear infinite;
+52
+-o-animation:move-twink-back 200s linear infinite;
+53
+-webkit-animation:move-twink-back 200s linear infinite;
+54
+animation:move-twink-back 200s linear infinite;
+55
+}
+56
+.clouds{
+57
+background:transparent url(images/clouds.png) repeat top center;
+58
+z-index:3;
+59
+-moz-animation:move-clouds-back 200s linear infinite;
+60
+-ms-animation:move-clouds-back 200s linear infinite;
+61
+-o-animation:move-clouds-back 200s linear infinite;
+62
+-webkit-animation:move-clouds-back 200s linear infinite;
+63
+animation:move-clouds-back 200s linear infinite;
+64
+}
